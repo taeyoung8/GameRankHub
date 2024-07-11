@@ -18,11 +18,16 @@ const sortOptions = [
 ]
 
 const Home: React.FC = () => {
+
+  const platformDefault = platformOptions[0];
+  const genreDefault = genreOptions[0];
+  const sortDefault = sortOptions[0];
+
   return (
     <div>
-        <span>Platform: <Select options={platformOptions}/></span>
-        <span>Genre: <Select options={genreOptions}/></span>
-        <span>Sort By: <Select options={sortOptions}></Select></span>
+        <span>Platform: <Select options={platformOptions } defaultValue={platformDefault}/></span>
+        <span>Genre: <Select options={genreOptions} defaultValue={genreDefault}/></span>
+        <span>Sort By: <Select options={sortOptions} defaultValue={sortDefault}></Select></span>
         <button>Search</button>
     </div>
   );
