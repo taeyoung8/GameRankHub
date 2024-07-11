@@ -6,8 +6,12 @@ const Header: React.FC = () => {
   return (
     <header>
         <nav>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
+          <ul>
+          <div>
+            <span><Link to="/">Home</Link></span>
+            <span><Link to="/about">About</Link> </span>
+            </div>
+          </ul>
         </nav>
     </header>
   );
